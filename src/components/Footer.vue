@@ -1,17 +1,51 @@
 <script>
 import { store } from '../data/store';
+import FooterInfo from './partials/FooterInfo.vue';
+import FooterExplore from './partials/FooterExplore.vue';
+import FooterRightInfo from './partials/Footer-right-info.vue';
   export default {
-    
+    data(){
+      return{
+        store
+      }
+    },
+    components:{
+      FooterInfo,
+      FooterExplore,
+      FooterRightInfo
+    }
   }
 </script>
 
 <template>
-  <div>
-    footer
-  </div>
+  <footer>
+    <div class="container h-100">
+      <div class="row row-upper h-75 flex-wrap align-content-center ">
+        <div class="col">
+          <FooterInfo />
+        </div>
+        <div class="col">
+          <div class="row align-content-center ">
+            <FooterExplore />
+            <FooterRightInfo />
+          </div>
+        </div>
+      </div>
+      <div class="row row-bottom h-25">
+        <div class="col">
+
+        </div>
+      </div>
+    </div>
+  </footer>
 </template>
 
 
 <style lang="scss" scoped>
-@use '../assets/scss/main.scss'
+@use '../assets/scss/main.scss' as *;
+
+footer{
+  height: 400px;
+  background-color:$block-bcg ;
+}
 </style>

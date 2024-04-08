@@ -2,7 +2,7 @@
 import { reactive } from 'vue'
 
 export const store = reactive({
-  nav:[
+  header_nav:[
     {
       title: 'Home',
       url: '#',
@@ -58,5 +58,76 @@ export const store = reactive({
       ]
     }
   ],
+
+  footernav: 
+    {
+      address :[
+        '382 NE 191st St # 87394 Miami, FL 33179-3899',
+        '+1 (305)547-9909 (9am-5pm EST, Monday-Friday)',
+        'support@maccoach.com'
+      ],
+      icons: [
+        {
+        name : 'fa-brands fa-square-facebook',
+        href: '#'
+        },
+        {
+        name: 'fa-brands fa-x-twitter',
+        href: '#'
+        },
+        {
+        name : 'fa-brands fa-instagram',
+        href: '#'
+        },
+        {
+        name : 'fa-brands fa-linkedin',
+        href: '#'
+        }
+      ],
+      explore :[
+        'Start here',
+        'Blog',
+        'About us',
+        'Success story',
+        'Courses',
+        'Contact us',
+      ],
+
+      information :[
+      'Membership',
+      'Purchase guide',
+      'Privacy police',
+      'Terms of services'
+      ]
+    },
+
   
+  
+  
+  
+  
+  
+
+
+  //   {
+  //     title: 'Explore',
+  //     explore :[
+  //       'Start here',
+  //       'Success story',
+  //       'Blog',
+  //       'Courses',
+  //       'About using',
+  //       'Contact us',
+  //     ]
+  //   },
+
+  //   {
+  //     information :[
+  //     'Membership',
+  //     'Purchase guide',
+  //     'Privacy police',
+  //     'Terms of services'
+  //     ]
+  //   }
+  // ]
 })
