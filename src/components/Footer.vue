@@ -1,4 +1,5 @@
 <script>
+import { store } from '../data/store';
   export default {
     
   }
@@ -6,7 +7,7 @@
 
 <template>
   <div>
-
+    footer
   </div>
 </template>
 

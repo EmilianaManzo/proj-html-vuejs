@@ -1,5 +1,6 @@
 <script>
   import axios from 'axios';
+  import { store } from './data/store';
   import Header from './components/Header.vue';
   import Main from './components/Main.vue';
   import Footer from './components/Footer.vue';
@@ -12,7 +13,8 @@
       },
       data(){
         return{
-          axios
+          axios,
+          store
         }
       }
   }
@@ -20,7 +22,9 @@
 
 
 <template>
-  
+  <Header />
+  <Main />
+  <Footer />
 </template>
 
 
