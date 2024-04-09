@@ -59,6 +59,65 @@ export const store = reactive({
     }
   ],
   
+  service:
+    {
+      statisticNumber:[
+        {
+          number:'1.926',
+          type: 'finished sessions'
+        },
+        {
+          number:'3.092+',
+          type: 'enrolled leaners'
+        },
+        {
+          number:'200',
+          type: 'online instructors'
+        },
+        {
+          number:'100%',
+          type: 'satisfaction rate '
+        },
+      ],
+
+      services:[
+      [
+        {
+          img:'home-6-service-image-01.png',
+          service: 'Graphic Design',
+          description:'Have a passion for graphics and arts? Show your with confidence and self-assertiveness'
+        },
+        {
+          img:'home-6-service-image-03.png',
+          service: 'Idea Discussion',
+          description:'Get teamed up with the specialists who work and teach coding for years at famous universities.'
+        },
+        
+      ],
+      [ 
+        {
+          img:'home-6-service-image-02.png',
+          service: 'Business Administration',
+          description:'Learners are encouraged to study the mechanism and structure of system administration.'
+        },
+        {
+          img:'home-6-service-image-04.png',
+          service: 'Web Development',
+          description:'Learn to start building a webpage from scratch. You decide your own pace, course and speed.'
+        }
+      ],
+    ],
+
+
+
+      services_info:[
+        'Select & customize courses to your preferences',
+        'Change the tutor and make arrangements',
+        'Participate in events to join others',
+        'Get the desired certificate delivered at house',
+      ]
+    },
+    
 
   footernav: 
     {
@@ -101,4 +160,5 @@ export const store = reactive({
       'Terms of services'
       ]
   },
+
 })

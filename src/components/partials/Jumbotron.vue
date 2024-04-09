@@ -61,6 +61,7 @@ import GetStartedBtn from './GetStartedBtn.vue';
     .image-group{
       top: 70px;
       z-index: 999;
+      right: 50px;
       .img-center{
       @include centerFlex ('both');
       background-color: $white-text;
@@ -68,6 +69,7 @@ import GetStartedBtn from './GetStartedBtn.vue';
       position: absolute;
       left: 355px;
       top: 30px;
+      box-shadow: 0px 0px 20px 0px grey ;
     
     }
 
@@ -75,7 +77,7 @@ import GetStartedBtn from './GetStartedBtn.vue';
       img{
         position: absolute;
         left: 723px;
-        top: 352px;
+        top: 265px;
       }
     }
     }

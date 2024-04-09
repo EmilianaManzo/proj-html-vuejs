@@ -1,9 +1,11 @@
 <script>
 import { store } from '../data/store';
 import Jumbotron from './partials/Jumbotron.vue';
+import Service from './partials/Service.vue';
   export default {
     components:{
       Jumbotron,
+      Service
     },
     data(){
       return{
@@ -16,6 +18,8 @@ import Jumbotron from './partials/Jumbotron.vue';
 <template>
   <main>
     <Jumbotron />
+    <Service />
+    
   </main>
 </template>
 
