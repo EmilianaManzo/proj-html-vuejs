@@ -28,7 +28,9 @@ import Chart from './partials/Chart.vue';
           </div>
         </div>
 
-        <Navigator />
+        <Navigator
+        :nav="store.header_nav"
+        />
 
         <div class="col col-right p-0 d-flex align-items-center">
           <Chart />

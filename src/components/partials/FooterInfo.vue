@@ -1,6 +1,10 @@
 <script>
 import {store} from '../../data/store';
 export default {
+  props:{
+    address: Array,
+    icons: Array,
+  },
     data(){
       return{
         store
@@ -10,9 +14,9 @@ export default {
 </script>
 <template>
     <h5>Address</h5>
-    <p v-for="(item, i) in store.footernav.address" :key="`a-${i}`">{{ item}}</p>
+    <p v-for="(item, i) in address" :key="`a-${i}`">{{ item}}</p>
     <div class="social">
-      <span v-for="(item, i) in store.footernav.icons" :key="`i-${i}`"> 
+      <span v-for="(item, i) in icons" :key="`i-${i}`"> 
         <a :href="item.href" target="_blank"><i :class="item.name"></i></a>
       </span>
     </div>

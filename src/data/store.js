@@ -58,6 +58,7 @@ export const store = reactive({
       ]
     }
   ],
+  
 
   footernav: 
     {
@@ -99,35 +100,5 @@ export const store = reactive({
       'Privacy police',
       'Terms of services'
       ]
-    },
-
-  
-  
-  
-  
-  
-  
-
-
-  //   {
-  //     title: 'Explore',
-  //     explore :[
-  //       'Start here',
-  //       'Success story',
-  //       'Blog',
-  //       'Courses',
-  //       'About using',
-  //       'Contact us',
-  //     ]
-  //   },
-
-  //   {
-  //     information :[
-  //     'Membership',
-  //     'Purchase guide',
-  //     'Privacy police',
-  //     'Terms of services'
-  //     ]
-  //   }
-  // ]
+  },
 })

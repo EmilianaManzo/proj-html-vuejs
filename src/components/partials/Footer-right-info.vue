@@ -1,6 +1,9 @@
 <script>
 import {store} from '../../data/store';
 export default {
+  props:{
+    info:Array
+  },
     data(){
       return{
         store
@@ -12,7 +15,7 @@ export default {
   <div class="col w-50 h-100">
     <h5>Information</h5>
     <ul class=" p-0 ">
-      <li class="mb-3" v-for="(item, i) in store.footernav.information" :key="`in-${i}`">{{ item }}</li>
+      <li class="mb-3" v-for="(item, i) in info" :key="`in-${i}`">{{ item }}</li>
     </ul>
   </div>
 </template>

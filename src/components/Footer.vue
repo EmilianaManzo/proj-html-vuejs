@@ -22,12 +22,16 @@ import FooterRightInfo from './partials/Footer-right-info.vue';
     <div class="container h-100">
       <div class="row row-upper h-75 flex-wrap align-content-center ">
         <div class="col">
-          <FooterInfo />
+          <FooterInfo
+          :address="store.footernav.address" 
+          :icons="store.footernav.icons"/>
         </div>
         <div class="col">
           <div class="row align-content-center ">
-            <FooterExplore />
-            <FooterRightInfo />
+            <FooterExplore 
+            :explore="store.footernav.explore"/>
+            <FooterRightInfo
+            :info="store.footernav.information" />
           </div>
         </div>
       </div>

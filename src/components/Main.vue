@@ -1,14 +1,22 @@
 <script>
 import { store } from '../data/store';
+import Jumbotron from './partials/Jumbotron.vue';
   export default {
-    
+    components:{
+      Jumbotron,
+    },
+    data(){
+      return{
+        store
+      }
+    }
   }
 </script>
 
 <template>
-  <div>
-    main
-  </div>
+  <main>
+    <Jumbotron />
+  </main>
 </template>
 
 
