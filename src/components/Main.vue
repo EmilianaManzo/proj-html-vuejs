@@ -2,10 +2,12 @@
 import { store } from '../data/store';
 import Jumbotron from './partials/Jumbotron.vue';
 import Service from './partials/Service.vue';
+import Courses from './partials/Courses.vue';
   export default {
     components:{
       Jumbotron,
-      Service
+      Service,
+      Courses
     },
     data(){
       return{
@@ -19,7 +21,9 @@ import Service from './partials/Service.vue';
   <main>
     <Jumbotron />
     <Service />
-    
+    <Courses />
+
+
   </main>
 </template>
 
