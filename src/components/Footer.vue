@@ -16,7 +16,7 @@ import FooterRightInfo from './partials/Footer-right-info.vue';
     }
   }
 </script>
-
+<!-- TODO:fix fpnt-size e distanze -->
 <template>
   <footer>
     <div class="container h-100">
