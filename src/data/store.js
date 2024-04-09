@@ -163,6 +163,14 @@ export const store = reactive({
     },
   ],
 
+  sponsor:[
+    {img:'client-logo-colored-01.png'},
+    {img:'client-logo-colored-02.png'},
+    {img:'client-logo-colored-03.png'},
+    {img:'client-logo-colored-04.png'},
+    {img:'client-logo-colored-05.png'},
+    {img:'client-logo-colored-06.png'}
+  ],
 
   footernav: 
     {
