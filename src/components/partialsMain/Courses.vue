@@ -55,7 +55,7 @@ import Btn from '../partialsBtn/Btn.vue';
 @use '../../assets/scss/main.scss' as *;
 
 .courses{
-  background-color: #f5f7fa ;
+  background-color: $block-bcg;
   padding-top:95px ;
 }
 .container{

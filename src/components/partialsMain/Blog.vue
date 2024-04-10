@@ -22,7 +22,7 @@ import {store} from '../../data/store';
         <p>ENJOY READING ON MAXCOACH</p>
         <h1>Latest on <span class="green">Our Blog</span></h1>
       </div>
-      <div class="row row-down row-cols-3 ">
+      <div class="row row-down row-cols-3 justify-content-center  align-items-center ">
         <div class="col py-2" v-for="(blog, i) in store.blogs" :key="i">
           <div class="img">
             <img :src="getImagePath(blog.img)" :alt="blog.work ">
@@ -46,7 +46,7 @@ import {store} from '../../data/store';
 @use '../../assets/scss/main.scss' as *;
 
 .blog{
-  background-color: #f5f7fa ;
+  background-color: $block-bcg ;
   padding: 95px 0;
   .container{
     .row-down{
