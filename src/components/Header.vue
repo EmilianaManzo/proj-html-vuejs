@@ -1,8 +1,8 @@
 <script>
 import { store } from '../data/store';
-import Navigator from './partials/Navigator.vue';
-import Searchbar from './partials/Searchbar.vue';
-import Chart from './partials/Chart.vue';
+import Navigator from './partialsHeader/Navigator.vue';
+import Searchbar from './partialsHeader/Searchbar.vue';
+import Chart from './partialsHeader/Chart.vue';
 
   export default {
     components:{

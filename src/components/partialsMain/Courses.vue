@@ -1,6 +1,10 @@
 <script>
 import {store} from '../../data/store';
+import Btn from '../partialsBtn/Btn.vue';
   export default {
+    components:{
+      Btn
+    },
     data(){
       return{
         store
@@ -38,7 +42,7 @@ import {store} from '../../data/store';
       </div>
       <div class="row row-bottom">
         <div class="col">
-          <button class="btn btn-courses">View all courses</button>
+          <Btn :type="2" :text="store.btn_viewcourses" />
         </div>
         
       </div>
@@ -125,11 +129,10 @@ import {store} from '../../data/store';
         padding: 15px 40px;
         font-weight: bold;
         margin: 50px 70px 0;
-        &::after{
-          content: '\f061';
-          font-family: 'Fontawesome';
-          margin-left: 10px ;
 
+        &:hover {
+          background-color:$bcgc-header !important;
+          color: $white-text !important ; 
         }
       }
     }

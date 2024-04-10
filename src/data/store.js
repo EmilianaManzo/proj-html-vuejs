@@ -214,4 +214,7 @@ export const store = reactive({
       ]
   },
 
+  btn_getstarted: 'Get started for free',
+  btn_viewcourses: 'View all courses',
+
 })

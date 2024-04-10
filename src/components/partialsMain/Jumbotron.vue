@@ -1,14 +1,16 @@
 <script>
 import {store} from '../../data/store';
-import GetStartedBtn from './GetStartedBtn.vue';
+import Prova from '../partialsBtn/Btn.vue';
+import Btn from '../partialsBtn/Btn.vue';
 
   export default {
     components:{
-      GetStartedBtn
+      Btn
     },
     data(){
       return{
-        store
+        store,
+        
       }
     },
   }
@@ -21,7 +23,7 @@ import GetStartedBtn from './GetStartedBtn.vue';
         <div class="col text-center p-0">
           <h1 class="mb-4">Learn At Your Own Pace!</h1>
           <p class=" fs-6">Get teamed up with people of the same will.</p>
-          <GetStartedBtn />
+          <Btn :type="1" :text="store.btn_getstarted"  />
           <div class="image-group d-flex position-relative ">
             <div class="img-left">
               <img src="../../assets/img/home-6-hero-left-person.png" alt="">

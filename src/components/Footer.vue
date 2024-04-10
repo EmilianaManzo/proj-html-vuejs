@@ -1,8 +1,8 @@
 <script>
 import { store } from '../data/store';
-import FooterInfo from './partials/FooterInfo.vue';
-import FooterExplore from './partials/FooterExplore.vue';
-import FooterRightInfo from './partials/Footer-right-info.vue';
+import FooterInfo from './partialsFooter/FooterInfo.vue';
+import FooterExplore from './partialsFooter/FooterExplore.vue';
+import FooterRightInfo from './partialsFooter/Footer-right-info.vue';
   export default {
     data(){
       return{

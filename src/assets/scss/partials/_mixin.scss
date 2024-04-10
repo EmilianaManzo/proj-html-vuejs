@@ -1,3 +1,5 @@
+
+
 @mixin centerFlex($type : 'both'){
   display: flex;
   @if $type == 'vertical'{
@@ -9,3 +11,13 @@
     align-items: center;
   }
 }
+
+// @mixin btnhover ($type){
+//   @if $type == 'dark'{
+//     background-color:#ffffff ;
+//     color:#1fad96; 
+//   }@else if $type == 'light'{
+//     background-color:#1f2154;
+//     color: #ffffff ;
+//   }
+// }
