@@ -29,6 +29,7 @@ import {store} from '../../data/store';
           <div class="position-relative img-group">
             <img class="avatar" src="../../assets/img/testimonial-avata-02.jpg" alt="">
             <img class="pattern" src="../../assets/img/maxcoach-shape-05-150x150.png" alt="">
+            <img src="../../assets/svg/blob.svg" alt="" class="forma">
           </div>
           <div>
             <h2 class="mb-5">I am free to learn at my own pace, follow my own schedule and choose the subject I like. Great study portal for people like me.</h2>
@@ -82,10 +83,18 @@ margin-bottom: 70px;
       }
       .pattern{
         position: absolute;
-        top: 85px;
-        left: 68px;
+        top: 40%;
+        left: 50%;
         z-index: -1;
   
+      }
+      .forma{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 168px;
+        width: 168px;
+        z-index: -1;
       }
     }
 

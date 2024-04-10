@@ -109,7 +109,7 @@ export const store = reactive({
       ],
     ],
 
-   
+
 
       services_info:[
         'Select & customize courses to your preferences',

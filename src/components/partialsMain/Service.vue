@@ -23,8 +23,32 @@ import Btn from '../partialsBtn/Btn.vue';
   <section class="services">
     <div class="container">
       <div class="row row-upper flex-column position-relative">
-        <div class="col col-upper text-center px-4 ">
-          <h2>Let passion and determination be the guide along the way and develop at your own pace that's comfortable</h2>
+    <div class="circle1 position-absolute ">
+      <img src="../../assets/palline/violet.svg" alt="">
+    </div>
+    <div class="circle2 position-absolute ">
+      <img src="../../assets/palline/orange.svg" alt="">
+    </div>
+    <div class="circle3 position-absolute ">
+      <img src="../../assets/palline/senape.svg" alt="">
+    </div>
+    <div class="circle4 position-absolute ">
+      <img src="../../assets/palline/green.svg" alt="">
+    </div>
+    <div class="circle5 position-absolute ">
+      <img src="../../assets/palline/blu.svg" alt="">
+    </div>
+    <div class="circle6 position-absolute ">
+      <img src="../../assets/palline/red.svg" alt="">
+    </div>
+    <div class="circle7 position-absolute ">
+      <img src="../../assets/palline/semigreen.svg" alt="">
+    </div>
+    <div class="circle8 position-absolute ">
+      <img src="../../assets/palline/semiorange.svg" alt="">
+    </div>
+    <div class="col col-upper text-center px-4 ">
+      <h2>Let passion and determination be the guide along the way and develop at your own pace that's comfortable</h2>
           <p class=" fw-bold mb-2 fs-6">FANNIE MORENO</p>
           <span>/ Founder & CEO</span>
         </div>
@@ -139,6 +163,63 @@ import Btn from '../partialsBtn/Btn.vue';
       padding-top: 150px;
       margin-left: 50px;
     } 
+  }
+
+  .circle1{
+    top: 200px;
+    left: 450px;
+    img{
+      width: 25px;
+    };
+  }
+  .circle2{
+    top: 350px;
+    left: 100px;
+    img{
+      width: 35px;
+    };
+  }
+  .circle3{
+    top: 600px;
+    left: 20px;
+    img{
+      width: 55px;
+    };
+  }
+  .circle4{
+    top: 150px;
+    left: 1250px;
+    img{
+      width: 50px;
+    };
+  }
+  .circle5{
+    top: 500px;
+    left: 800px;
+    img{
+      width: 35px;
+    }; 
+  }
+  .circle6{
+    top: 300px;
+    left: 90%;
+    img{
+      width: 45px;
+    };  
+  }
+  .circle7{
+    top: 100px;
+    left: 30px;
+    img{
+      width: 50px;
+    };  
+  }
+  .circle8{
+    top: 600px;
+    left: 92%;
+    img{
+      width: 70px;
+    };  
   }
 }
 

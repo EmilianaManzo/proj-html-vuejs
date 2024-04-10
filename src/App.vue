@@ -5,13 +5,15 @@
   import Main from './components/Main.vue';
   import Footer from './components/Footer.vue';
   import Utilities from './components/partialsGenerics/Utilities.vue';
+  import ArrowUp from './components/partialsGenerics/Arrow-up.vue';
 
   export default {
       components:{
         Header,
         Main,
         Footer,
-        Utilities
+        Utilities,
+        ArrowUp
       },
       data(){
         return{
@@ -24,6 +26,7 @@
 
 
 <template>
+  <ArrowUp />
   <Utilities />
   <Header />
   <Main />

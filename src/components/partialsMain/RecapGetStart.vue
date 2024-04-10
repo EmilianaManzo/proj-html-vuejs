@@ -15,7 +15,16 @@ import Btn from '../partialsBtn/Btn.vue';
 
 <template>
 <section class="recap">
-  <div class="container">
+  <div class="container position-relative ">
+    <div class="circle3 position-absolute ">
+      <img src="../../assets/palline/senape.svg" alt="">
+    </div>
+    <div class="circle5 position-absolute ">
+      <img src="../../assets/palline/blu.svg" alt="">
+    </div>
+    <div class="circle6 position-absolute ">
+      <img src="../../assets/palline/red.svg" alt="">
+    </div>
     <div class="row">
       <div class="col text-center">
         <h6>Start today for getting <span class="green">Online Certification</span></h6>
@@ -47,6 +56,28 @@ import Btn from '../partialsBtn/Btn.vue';
       color: $dark-text;
       font-weight: bold;
     }
+
+    .circle3{
+    top: 50%;
+    left: 20px;
+    img{
+      width: 55px;
+    };
+  }
+  .circle5{
+    top: 50%;
+    left: 90%;
+    img{
+      width: 35px;
+    }; 
+  }
+  .circle6{
+    top: 0px;
+    left: 80%;
+    img{
+      width: 45px;
+    };  
+  }
 }
 
 </style>

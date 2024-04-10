@@ -33,9 +33,18 @@ import {store} from '../../data/store';
           </div>
         </div>
       </div>
-      <div class="row row-img">
+      <div class="row row-img position-relative ">
         <div class="col col-img d-flex  justify-content-center ">
           <img src="../../assets/img/home-6-services-image-1024x411.png" alt="">
+        </div>
+        <div class="circle4 position-absolute ">
+          <img src="../../assets/palline/green.svg" alt="">
+        </div>
+        <div class="circle2 position-absolute ">
+          <img src="../../assets/palline/orange.svg" alt="">
+        </div>
+        <div class="circle7 position-absolute ">
+          <img src="../../assets/palline/semigreen.svg" alt="">
         </div>
       </div>
       
@@ -86,6 +95,29 @@ import {store} from '../../data/store';
       color: $grey-text;
       font-weight: bold;
     }
+  }
+
+  .circle2{
+    top: 420px;
+    left: 20px;
+    img{
+      width: 35px;
+    };
+  }
+
+  .circle4{
+    top: 100px;
+    left: 90%;
+    img{
+      width: 50px;
+    };
+  }
+  .circle7{
+    top: 80px;
+    left: 13%;
+    img{
+      width: 50px;
+    };  
   }
 }
 
