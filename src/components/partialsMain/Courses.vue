@@ -41,7 +41,7 @@ import Btn from '../partialsBtn/Btn.vue';
         </div>
       </div>
       <div class="row row-bottom">
-        <div class="col">
+        <div class="col pt-5 ">
           <Btn :type="2" :text="store.btn_viewcourses" />
         </div>
         
@@ -77,45 +77,53 @@ import Btn from '../partialsBtn/Btn.vue';
   }
 
   .row-center{
-    img{
-      width: 150px;
-      aspect-ratio: 1;
-      border-radius: 50%;
-      overflow: hidden;
-      object-fit: cover;
-    }
-    .text{
-      padding-left: 20px;
-      padding-right: 50px;
-      h3{
-        color: $green-text;
-        font-weight: bold;
+    .col{
+      img{
+        width: 150px;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        overflow: hidden;
+        object-fit: cover;
       }
-      h4{
-        color: $bcgc-header;
-        font-weight: bold;
-      }
-      .lessons{
-        margin-right: 10px ;
-        color: $minitext-courses;
-        &::before{
-        font-family: 'Fontawesome';
-        content: '\f15c';
+      .text{
+        padding-left: 20px;
+        padding-right: 50px;
+        h3{
+          color: $green-text;
+          font-weight: bold;
+        }
+        h4{
+          color: $bcgc-header;
+          font-weight: bold;
+        }
+        .lessons{
+          margin-right: 10px ;
+          color: $minitext-courses;
+          &::before{
+          font-family: 'Fontawesome';
+          content: '\f15c';
 
-        margin-right: 5px; 
+          margin-right: 5px; 
+          }
+        }
+        .students{
+          color: $minitext-courses;
+          &::before{
+          font-family: 'Fontawesome';
+          content: '\f007';
+          margin-right: 5px; 
+          }
+        }
+        
+      }
+      &:hover{
+        background-color: white;
+        border-radius: 5px;
+        h4{
+          color: $green-text;;
         }
       }
-      .students{
-        color: $minitext-courses;
-        &::before{
-        font-family: 'Fontawesome';
-        content: '\f007';
-        margin-right: 5px; 
-        }
-      }
-      
-    }
-    
+    } 
   }
 
   .row-bottom{

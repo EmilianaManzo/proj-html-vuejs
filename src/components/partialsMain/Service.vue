@@ -136,7 +136,8 @@ import Btn from '../partialsBtn/Btn.vue';
         color:$green-text;
       }
     .col-together{
-      padding-top: 100px;
+      padding-top: 150px;
+      margin-left: 50px;
     } 
   }
 }

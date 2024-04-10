@@ -31,7 +31,7 @@ import {store} from '../../data/store';
             <img class="pattern" src="../../assets/img/maxcoach-shape-05-150x150.png" alt="">
           </div>
           <div>
-            <h2>I am free to learn at my own pace, follow my own schedule and choose the subject I like. Great study portal for people like me.</h2>
+            <h2 class="mb-5">I am free to learn at my own pace, follow my own schedule and choose the subject I like. Great study portal for people like me.</h2>
             <p class=" fw-bold mb-2 fs-6">MINA HOLLACE</p>
             <span>/ Freelancer</span>
           </div>
@@ -90,20 +90,20 @@ margin-bottom: 70px;
     }
 
     h2 {
-        margin-bottom: 55px;
-        color:$dark-text;
-        padding: 0 300px 0 30px;
-      }
-      p{
-        color:$dark-text ;
-        font-weight: bold;
-        padding: 30px;
-      }
-      span{
-        font-size: .9rem;
-        color: $minitext-courses;
-        padding: 30px;
-      }
+      color:$dark-text;
+      padding: 0 300px 0 30px;  
+    }
+
+    p{
+      color:$dark-text ;
+      font-weight: bold;
+      padding-left: 30px;
+    }
+    span{
+      font-size: .9rem;
+      color: $minitext-courses;
+      padding-left: 30px;
+    }
   }
 }
 

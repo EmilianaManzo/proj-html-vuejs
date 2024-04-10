@@ -5,14 +5,20 @@ import {store} from '../../data/store';
       return{
         store
       }
+    },
+    methods:{
+      counterplus(){
+        return store.counter++
+        // giusto per vedere se funziona
+      }
     }
   }
 </script>
 
 <template>
   <div class="chart mx-2 ">
-    <i class="fa-solid fa-cart-shopping"></i>
-    <div class=" d-inline-block counter">1</div>
+    <i class="fa-solid fa-cart-shopping" @click="counterplus"></i>
+    <div class=" d-inline-block counter">{{ store.counter }}</div>
   </div>
 </template>
 

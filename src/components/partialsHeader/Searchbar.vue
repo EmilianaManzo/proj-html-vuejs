@@ -10,8 +10,9 @@ import {store} from '../../data/store';
 </script>
 
 <template>
-  <div class="search">
-    <input type="text" class="form-control w-75 ">
+  <div class="search justify-content-between ">
+    <input type="text" class="form-control w-75 "
+    placeholder="Search">
     <i class="fa-solid fa-magnifying-glass"></i>
   </div>
 </template>
@@ -25,8 +26,12 @@ import {store} from '../../data/store';
   background-color: $white-text;
   padding: 0 15px;
   border-radius: 5px ;
+  width: 300px;
   input{
     border: none !important;
+    &:focus{
+      box-shadow: none!important;
+    }
   }
   i{
     color: $green-text;

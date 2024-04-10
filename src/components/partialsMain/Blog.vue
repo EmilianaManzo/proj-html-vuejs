@@ -55,9 +55,15 @@ import {store} from '../../data/store';
         img{
           width: 100%;
         }
+        p{
+          font-size: .9rem;
+          margin-top: 20px;
+        }
         h4{
           font-weight: bold;
           color: $dark-text;
+          font-size: 1.3rem;
+
         }
 
         .date{

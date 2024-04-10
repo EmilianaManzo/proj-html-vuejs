@@ -16,11 +16,11 @@ import FooterRightInfo from './partialsFooter/Footer-right-info.vue';
     }
   }
 </script>
-<!-- TODO:fix fpnt-size e distanze -->
+
 <template>
   <footer>
     <div class="container h-100">
-      <div class="row row-upper h-75 flex-wrap align-content-center ">
+      <div class="row row-upper h-75 flex-wrap align-content-center justify-content-center  ">
         <div class="col">
           <FooterInfo
           :address="store.footernav.address" 
@@ -35,9 +35,9 @@ import FooterRightInfo from './partialsFooter/Footer-right-info.vue';
           </div>
         </div>
       </div>
-      <div class="row row-bottom h-25">
-        <div class="col">
-
+      <div class="row row-bottom justify-content-center align-items-center">
+        <div class="col py-5  text-center">
+          <p><i class="fa-regular fa-copyright"></i> 2020 Maxcoach. All Rights Reserved</p>
         </div>
       </div>
     </div>
@@ -49,7 +49,14 @@ import FooterRightInfo from './partialsFooter/Footer-right-info.vue';
 @use '../assets/scss/main.scss' as *;
 
 footer{
-  height: 400px;
   background-color:$block-bcg ;
+  padding: 95px 0;
+
+  .row-bottom{
+    p{
+      font-size: 0.7rem;
+      color: $grey-text;
+    }
+  }
 }
 </style>

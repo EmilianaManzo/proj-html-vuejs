@@ -34,7 +34,7 @@ import {store} from '../../data/store';
         </div>
       </div>
       <div class="row row-img">
-        <div class="col col-img justify-content-center ">
+        <div class="col col-img d-flex  justify-content-center ">
           <img src="../../assets/img/home-6-services-image-1024x411.png" alt="">
         </div>
       </div>

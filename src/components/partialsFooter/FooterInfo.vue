@@ -12,8 +12,9 @@ export default {
     }
   }
 </script>
+
 <template>
-    <h5>Address</h5>
+    <h6>Address</h6>
     <p v-for="(item, i) in address" :key="`a-${i}`">{{ item}}</p>
     <div class="social">
       <span v-for="(item, i) in icons" :key="`i-${i}`"> 
@@ -29,5 +30,20 @@ i{
   font-size: 1.3rem;
   margin-right: 20px;
   color: $grey-text;
+}
+
+.col{
+
+  h6{
+    font-weight: bold;
+    color: $dark-text;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+  }
+  p{
+    color: $grey-text;
+    font-weight: bold;
+    font-size: 0.8rem;
+  }
 }
 </style>

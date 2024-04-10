@@ -16,9 +16,6 @@ import {store} from '../../data/store';
   <nav class="col col-nav p-0 d-flex align-items-center justify-content-center">
       <ul class="ul-nav m-0">
         <li v-for="(element, indice) in nav" :key="indice"><a  :href="element.url">{{ element.title }} </a> <i class="fa-solid fa-chevron-down"></i>
-          <ul class="dropdown d-none">
-            <li v-for="(link, i) in element.navlink" :key="i">{{ link }}</li>
-          </ul>
         </li>
       </ul>
   </nav>
@@ -47,10 +44,6 @@ import {store} from '../../data/store';
         position: absolute;
         left: 0;
         top:50px ;
-      }
-
-      &:hover .dropdown{
-        display: inline !important;
       }
     } 
     :first-child{

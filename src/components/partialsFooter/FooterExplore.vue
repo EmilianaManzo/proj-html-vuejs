@@ -13,7 +13,7 @@ import {store} from '../../data/store';
 </script>
 <template>
   <div class="col w-50 h-100">
-      <h5>Explore</h5>
+      <h6>Explore</h6>
       <ul class=" p-0 ">
         <li class="mb-3" v-for="(item, i) in explore" :key="`e-${i}`">{{ item }}</li>
 
@@ -23,10 +23,22 @@ import {store} from '../../data/store';
 
 
 <style lang="scss" scoped>
+@use '../../assets/scss/main.scss' as *;
 .col{
   width: 50% !important;
   ul{
-    columns: 2;   
+    columns: 2; 
+    li{
+      color: $grey-text;
+      font-weight: bold;
+      font-size: 0.8rem;
+    }  
+  }
+  h6{
+    font-weight: bold;
+    color: $dark-text;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
   }
 }
 </style>

@@ -4,12 +4,14 @@
   import Header from './components/Header.vue';
   import Main from './components/Main.vue';
   import Footer from './components/Footer.vue';
+  import Utilities from './components/partialsGenerics/Utilities.vue';
 
   export default {
       components:{
         Header,
         Main,
         Footer,
+        Utilities
       },
       data(){
         return{
@@ -22,6 +24,7 @@
 
 
 <template>
+  <Utilities />
   <Header />
   <Main />
   <Footer />
