@@ -217,4 +217,27 @@ export const store = reactive({
   btn_getstarted: 'Get started for free',
   btn_viewcourses: 'View all courses',
 
+  blogs:[
+    {
+      img:'artist-blog-03-480x325.jpeg',
+      work:'ARTIST',
+      title: 'Brush Strokes Energize Trees in Painting',
+      date: 'May 15, 2020',
+      views: '688 views'
+    },
+    {
+      img:'artist-blog-01-480x325.jpg',
+      work:'ARTIST',
+      title: 'Pocket-Sized Notebooks Hold Miniature Paintings',
+      date: 'May 15, 2020',
+      views: '603 views'
+    },
+    {
+      img:'artist-blog-02-480x325.jpg',
+      work:'ARTIST',
+      title: 'Connection Between Self-Portraits and Identity',
+      date: 'May 15, 2020',
+      views: '397 views'
+    },
+  ]
 })

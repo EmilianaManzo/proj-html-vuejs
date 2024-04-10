@@ -1,7 +1,11 @@
 <script>
 import {store} from '../../data/store';
+import Btn from '../partialsBtn/Btn.vue';
 
   export default {
+    components:{
+      Btn
+    },
     data(){
       return{
         store
@@ -36,10 +40,10 @@ import {store} from '../../data/store';
       <div class="row row-bottom">
 
         <div class="col col-upper">
-          <div class="row ">
-            <div class="col">
-              <div class="row row-cols-2" >
-                  <div class="col" v-for="(item,index) in store.service.services" :key="index" :class="index == 1 ? 'pt-5' : ''">
+          <div class="row sottorow">
+            <div class="col sottocol">
+              <div class="row row-cols-2 rowcard" >
+                  <div class="col colcard" v-for="(item,index) in store.service.services" :key="index" :class="index == 1 ? 'pt-5' : ''">
                     <div class="card position-relative mb-3 p-0   "
                     v-for="(elem,i) in item" :key="i"  >
                       <div class="w-100" :class=" i == 0  ? 'order-1' : ''">
@@ -55,10 +59,11 @@ import {store} from '../../data/store';
               
             </div>
             
-            <div class="col col-together" >
+            <div class="col  col-together" >
               <p>TOGETHER WE CAN CREATE</p>
               <h2>Services We <span class="green">Can Provide</span> For My Clients.</h2>
               <p class="service-info" v-for="(item,i) in store.service.services_info" :key="i">{{ item }}</p>
+              <Btn :type="2" :text="store.btn_getstarted" />
             </div>
           </div>
         </div>
@@ -67,7 +72,6 @@ import {store} from '../../data/store';
   </section>
 </template>
 
-<!-- TODO: FARE HOVER DIFFERENTI CON MIXIN -->
 <style lang="scss" scoped>
 @use '../../assets/scss/main.scss' as *;
 
@@ -75,6 +79,7 @@ import {store} from '../../data/store';
   background-image: url(../../assets/img/background-pattern-grid-line.png);
   background-repeat: repeat;
   background-position: center;
+  padding-bottom: 95px;
   .row-upper{
     .col-upper{
       padding-top:300px; 
@@ -109,7 +114,9 @@ import {store} from '../../data/store';
   .row-bottom{
     margin-top: 100px;
     .card{
-      padding: 0 0 20px
+      padding: 0 0 20px;
+      border: none;
+      box-shadow: 0px 0px 20px 0px grey ;
     }
     p{
       color: $grey-text;
